@@ -11,7 +11,7 @@
           </div>
           <% if(!p.content.empty?) %>
               <div class="container">
-                  <%= p.content %>
+                  <%=  simple_format(p.content) %>
               </div>
           <% end %>
           <%= image_tag p.asset.url, width: 1024, height: 682, alt: "Surly" %>
