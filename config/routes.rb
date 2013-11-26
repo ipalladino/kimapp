@@ -1,4 +1,11 @@
 KimApp::Application.routes.draw do
+  get '/' => 'pages#index'
+  resources :posts
+  
+  get 'admin'   => 'sessions#login'
+  get 'login'   => 'sessions#create'
+  get 'logout'  => 'sessions#destroy'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

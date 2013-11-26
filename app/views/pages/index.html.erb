@@ -1,0 +1,52 @@
+<div id="slides">
+    <ul class="slides-container">
+        <% @posts.each do |p| %>
+        <li>
+            
+          <div class="title">
+              <% if(!p.content.empty?) %>
+                <i class="icon-message"></i>
+              <% end %>
+              <%= p.title %>
+          </div>
+          <% if(!p.content.empty?) %>
+              <div class="container">
+                  <%= p.content %>
+              </div>
+          <% end %>
+          <%= image_tag p.asset.url, width: 1024, height: 682, alt: "Surly" %>
+        </li>
+        <% end %>
+        <li>
+          <%= image_tag "surly.jpeg", width: 1024, height: 682, alt: "Surly" %>
+          <div class="container">
+            Slide two
+          </div>
+        </li>
+        <li>
+          <%= image_tag "cinelli-front.jpeg", width: 1024, height: 682, alt: "Surly" %>
+          <div class="container">
+            Slide three
+          </div>
+        </li>
+        <li>
+          <%= image_tag "affinity.jpeg", width: 1024, height: 682, alt: "Surly" %>
+          <div class="container">
+            Slide three
+          </div>
+        </li>
+      </ul>
+
+    <div class="slides-navigation">
+      <a href="#" class="next"><i class="icon-arrow_big_right"></i></a>
+      <a href="#" class="prev"><i class="icon-arrow_big_left"></i></a>
+    </div>
+  </div>
+  
+  <script>
+    $(function() {
+      $('#slides').superslides({
+        hashchange: true
+      });
+    });
+ </script>

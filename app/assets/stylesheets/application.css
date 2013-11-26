@@ -11,3 +11,68 @@
  *= require_self
  *= require_tree .
  */
+
+
+@font-face {
+ font-family: "Caslon";
+ src: url('/assets/Uk_Caslon.ttf');
+}
+
+a:hover {
+    text-decoration:none;
+    background-color:transparent;
+}
+
+
+a {
+    text-decoration:none;
+}
+.aicon-linkedin {
+    text-decoration: none;
+    font-size: 0.9em;
+    position: relative;
+    top: -1px;
+}
+.aicon-mail {
+    margin-right: 10px;
+}
+.aicon-user {
+    text-decoration: none;
+    font-size: 0.85em;
+    position: relative;
+    top: -2px;
+    margin-right: 11px;
+}
+    
+footer {
+    color:#f0f0f0;
+    position:fixed;
+    bottom:0;
+    height:50px;
+    background-color:rgba(0,0,0,.7);
+    width:100%;
+    z-index:2;
+    padding-left:100px;
+    padding-top:30px;
+    font-size:1.5em;
+}
+footer i {
+    font-size:2em;
+    color:#f0f0f0;
+}
+span {
+    position:relative;
+    top:-6px;
+}
+footer a:visited, footer a {
+    color:#c3c3c3;
+    text-decoration:none;
+}
+
+.author {
+    font-size: 1.9em;
+    font-weight: 100;
+    margin-left: 11px;
+    position: relative;
+    top: -1px;
+}

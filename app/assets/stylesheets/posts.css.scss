@@ -1,0 +1,126 @@
+// Place all the styles related to the Posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body, html {
+    margin:0 0 0 0;
+    font-family: "Helvetica neue" !important;
+    font-weight: 400 !important;
+    color:#f0f0f0;
+}
+
+.title_input {
+    width:400px;
+    height:2em;
+    font-size:1.2em;
+}
+textarea {
+    width:400px;
+    height:200px;
+    font-size:1.2em;
+}
+
+header {
+    position:fixed;
+    background-color:#d0d0d0;
+    top:0;
+    font-family:"Caslon","Times new roman";
+    width:100%;
+    z-index:2;
+    opacity:0.7;
+    padding:20px;
+    font-size:2em;
+}
+
+.container {
+    position:fixed;
+    display:block;
+}
+
+#slides {
+    .title {
+        position: relative;
+        top: 100px;
+        left: 100px;
+        color: #f0f0f0;
+        font-size: 1.9em;
+        z-index: 3;
+        -webkit-backface-visibility: hidden;
+        background-color: rgba(0, 0, 0, 0.2);
+        line-height: 26px;
+        padding: 10px;
+        width: 700px;
+        font-weight: 300;;
+    }
+    
+    .container {
+        width:600px;
+        position:relative;
+        top:140px;
+        left:100px;
+        color:#f0f0f0;
+        font-size:1.5em;
+        z-index:3;
+        -webkit-backface-visibility:hidden;
+        font-weight:200;
+        font-family:"Helvetica neue";
+        background-color:rgba(0,0,0,.2);
+        padding:10px;
+    }
+    
+    img {
+        position:relative;
+        z-index:0;
+    }
+}
+
+.slides-navigation a{
+    color:#FFFFFF;
+}
+
+a {
+    text-decoration:none;
+}
+
+.slides-navigation a:visited {
+    color:#FFFFFF;
+};
+
+a:hover {
+    color:#c3c3c3 !important;
+};
+
+
+.next, .prev {
+    font-size:3em; 
+    line-height:0;
+}
+
+#left-content {
+    z-index:1;
+}
+
+#right-content {
+    z-index:1;
+}
+
+
+
+#newpost {
+    position:relative;
+    top:60px;
+    left:50px;
+}
+
+.debug_dump {
+    position:relative;
+    top:200px;
+}
+
+#posts {
+    margin-top:60px;
+}
+
+#login {
+    margin-top:60px;
+}
