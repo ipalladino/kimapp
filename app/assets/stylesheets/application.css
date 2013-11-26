@@ -76,3 +76,9 @@ footer a:visited, footer a {
     position: relative;
     top: -1px;
 }
+
+p, ol, ul, td {
+font-size: 17px !important;
+line-height: 18px !important;
+letter-spacing: 1px !important;
+}
