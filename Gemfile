@@ -4,7 +4,8 @@ source 'https://rubygems.org'
 gem 'rails', '4.0.1'
 gem 'rails-backbone'
 gem "paperclip"
-gem "debugger"
+gem "rails_12factor"
+#gem "debugger"
 
 # Use sqlite3 as the database for Active Record
 gem 'pg'
