@@ -3,7 +3,7 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.1'
 gem 'rails-backbone'
-gem "paperclip", :git => "http://github.com/thoughtbot/paperclip.git"
+gem "paperclip"
 gem "debugger"
 
 # Use sqlite3 as the database for Active Record
